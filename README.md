@@ -56,25 +56,25 @@ python pygit.py <command> [options]
 
 - Initialize a new repository:
 
-  python pygit.py init my_repo
+  `python pygit.py init my_repo`
 
   
 
 - Add a file to the index:
-  
-  python pygit.py add my_file.txt
+
+  `python pygit.py add my_file.txt`
 
   
 
 - Commit changes:
 
-  python pygit.py commit -m "Initial commit"
+  `python pygit.py commit -m "Initial commit"`
 
   
 
 - Push to remote:
 
-  python pygit.py push https://github.com/username/repo.git
+  `python pygit.py push https://github.com/username/repo.git`
 
   
 
