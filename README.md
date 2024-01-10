@@ -1,6 +1,6 @@
 # PyGit - Minimal Python Git Implementation
 
-PyGit is a minimal implementation of Git in Python, capable of basic Git operations like committing and pushing to GitHub. This project is inspired by the story shared by Ben Hoyt, which can be read [here](http://benhoyt.com/writings/pygit/).
+PyGit is a minimal implementation of Git in Python, capable of basic Git operations like committing and pushing to GitHub. 
 
 ## Features
 
@@ -26,11 +26,11 @@ No installation is required. Just clone this repository and run the script direc
 
 PyGit is a command-line tool and can be used with various commands similar to Git:
 
-```bash
+
 
 python pygit.py <command> [options]
 
-```
+
 
 ### Available Commands
 
@@ -56,35 +56,27 @@ python pygit.py <command> [options]
 
 - Initialize a new repository:
 
-  ```bash
-
   python pygit.py init my_repo
 
-  ```
+  
 
 - Add a file to the index:
-
-  ```bash
-
+  
   python pygit.py add my_file.txt
 
-  ```
+  
 
 - Commit changes:
 
-  ```bash
-
   python pygit.py commit -m "Initial commit"
 
-  ```
+  
 
 - Push to remote:
 
-  ```bash
-
   python pygit.py push https://github.com/username/repo.git
 
-  ```
+  
 
 ## Dependencies
 
