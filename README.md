@@ -1,4 +1,5 @@
 # PyGit - Minimal Python Git Implementation
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 PyGit is a minimal implementation of Git in Python, capable of basic Git operations like committing and pushing to GitHub. 
 
