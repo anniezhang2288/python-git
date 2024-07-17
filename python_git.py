@@ -3,7 +3,7 @@ import struct, sys, time, urllib.request, zlib
 
 # Data for one entry in the git index (.git/index)
 """List of file entries ordered by path, each of which contains path name, modification name,
-SHA-1 hash, etc. Lists all files in the current tree, not just fiels staged for commit right now"""
+SHA-1 hash, etc. Lists all files in the current tree, not just files staged for commit right now"""
 IndexEntry = collections.namedtuple('IndexEntry', [
     'ctime_s', 'ctime_n', 'mtime_s', 'mtime_n', 'dev', 'ino', 'mode', 'uid',
     'gid', 'size', 'sha1', 'flags', 'path',
@@ -18,7 +18,6 @@ Three types of objects in Git:
 Each object has a small header w the type and size in bytes, followed by NUL byte 
 and the file's data bytes. Everything is zlib-compressed and written to .git/objects/ab/cd...,
 where ab are the first two characters of the 40-character SHA-1 hash ad cd.... is the rest
-
 """
 class ObjectType(enum.Enum):
     """Object type enum. """
@@ -36,7 +35,7 @@ def write_file(path, data):
     with open(path, 'wb') as f:
         f.write(data)
 
-"""Creatign the .git directory and files/directories under it"""
+"""Creating the .git directory and files/directories under it"""
 def init(repo):
     """Create directory for repo and initialize .git directory"""
     os.mkdir(repo)
